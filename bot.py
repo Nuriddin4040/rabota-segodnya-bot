@@ -10,7 +10,6 @@ from aiogram.enums import ParseMode
 from aiogram.types import Message, CallbackQuery, InlineKeyboardButton, InlineKeyboardMarkup
 from aiogram.utils.keyboard import InlineKeyboardBuilder
 from aiogram.filters import Command, CommandStart
-from aiogram.client.default import DefaultBotProperties
 
 # === НАСТРОЙКИ ===
 BOT_TOKEN = "7914894994:AAF1ZN721rA3xDBgGjEUYWeniSjvn7jaINk"
@@ -26,7 +25,7 @@ logging.basicConfig(
 )
 
 # === ИНИЦИАЛИЗАЦИЯ БОТА ===
-bot = Bot(token=BOT_TOKEN, default=DefaultBotProperties(parse_mode=ParseMode.HTML))
+bot = Bot(token=BOT_TOKEN, parse_mode=ParseMode.HTML)
 dp = Dispatcher()
 
 # === РАССЫЛКА ДЛЯ АДМИНА ===
