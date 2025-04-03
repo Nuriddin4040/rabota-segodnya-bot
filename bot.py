@@ -1,17 +1,16 @@
 import asyncio
-import logging
 import sqlite3
+import logging
+import os
+import datetime
+import aiohttp
+
 from aiogram import Dispatcher, F
 from aiogram.types import Message, CallbackQuery, InlineKeyboardButton, InlineKeyboardMarkup
 from aiogram.enums import ParseMode
 from aiogram.utils.keyboard import InlineKeyboardBuilder
 from aiogram.filters import Command, CommandStart
-
-# ВАЖНО: Импортируем Bot из aiogram.client.bot
-#       и настраиваем parse_mode через DefaultBotProperties
 from aiogram.client.bot import Bot, DefaultBotProperties
-
-# === НАСТРОЙКИ ===
 # Вставь свой действующий токен бота:
 BOT_TOKEN = "7914894994:AAF1ZN721rA3xDBgGjEUYWeniSjvn7jaINk"
 # Задай свой user_id (ID админа):
