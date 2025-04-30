@@ -1,3 +1,8 @@
+<<<<<<< HEAD
 aiogram==3.7.0
 aiosqlite>=0.19
 python-dotenv>=1.0
+=======
+aiogram==3.1.1
+python-dotenv
+>>>>>>> 502dceb42f3546d7e4c3396564a8f15542f4d8ce
